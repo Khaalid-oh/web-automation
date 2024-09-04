@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.slider-container {
+    display: flex;
+    padding: 40px;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.wrapper {
+    padding: 10px;
+    margin: 10px;
+    height: 500px;
+    width: 350px; 
+    position: relative;
+    background-color: rgb(255, 63, 0)
+}
+
+.wrapper-two {
+    padding: 10px;
+    margin: 10px;
+    height: 500px;
+    width: 350px; 
+    position: relative;
+    background-color: rgb(37, 118, 7)
+}
+
+
+.wrapper-head {
+    display: flex;
+    gap: 10px;
+    color: #e8e3e3;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.wrapper-head h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.wrapper-content {
+    background-color: rgba(247, 161, 151, 0.471);
+    color: #fff;
+    padding: 40px;
+    margin: 30% 10px;
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid #ffffff3f;
+    gap: 2em;
+}
+
+.wrapper-content h1 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.wrapper-content p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.wrapper-btn {
+    align-items: center;
+    display: inline-flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.pagination-btn {
+    padding: 40px;
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+}
+
+.span-btn {
+    border: 1px solid gray;
+    padding: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media (min-width: 900px) {
+    .slider-track {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 899px) {
+    .wrapper {
+        flex: 0 0 calc(100% / 2 - 20px); /* Two cards visible */
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        flex: 0 0 100%; /* One card visible */
+    }
+}

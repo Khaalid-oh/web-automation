@@ -1,3 +1,4 @@
+/* trunk-ignore-all(prettier) */
 * {
   padding: 0;
   margin: 0;
@@ -15,8 +16,250 @@ body {
 .nav-bar {
   width: 1440px;
   background: white;
+  border-bottom: rgba(52, 51, 51, 0.107) solid 1px;
 }
 
+
+.menu > li {
+  position: relative;
+  display: inline-block;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+   width: 700px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  z-index: 1000;
+}
+
+.has-dropdown.active .mega-menu {
+  margin-top: 24px;
+  display: block;
+  width: 1000px;
+  left: -12em;
+
+}
+
+.menu-column-title{
+  display: flex;
+  justify-content: flex-start;
+   align-items: center;
+   text-align: center;
+   margin-bottom: 14px;
+   color: gray;
+   gap: 5px;
+   font-size: 14px;
+}
+
+
+
+.menu-column > ul  > li {
+  list-style: none;
+  font-size: small;
+}
+
+.menu-column > ul  > li > a {
+  text-decoration: none;
+  color: #131316;
+  font-size: small;
+}
+
+ .menu-column-card{
+  padding: 10px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.menu-column-card:hover{
+  border-radius: 14px;
+  background-color: rgb(248, 225, 184);
+  border: 1px solid orange;
+}
+
+
+ .menu-column-card > img {
+  width: 50px;
+  height: 50px;
+}
+
+.menu-column-card > div > p{
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 5px;
+ margin-left: 10px;
+}
+
+.menu-column-card > div > div {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 3px;
+}
+
+.menu-column-card > div > div > img{
+  width: 20px;
+  align-items: center;
+}
+
+.menu-column-card > div > div > span {
+  font-size: 12px;
+  align-items: center;
+  font-weight: thin;
+  margin-top: 3px;
+}
+
+
+.mega-menu .menu-column {
+  width: 33%;
+  float: left;
+  padding: 0 15px;
+}
+
+.mega-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mega-content > a{
+  text-decoration: none;
+   border-radius: 8px;
+   font-size: small;
+   color: rgb(246, 86, 86);
+   font-weight: 500;
+  padding: 8px;
+  background-color: white;
+  border-style: solid;
+  border-color: orange;
+}
+
+.mega-content > a:hover{
+  background-color: rgb(173, 118, 15);
+}
+
+/* TODO TAB AND MEGA MENU */
+
+::selection{
+  background: #6d50e2;
+  color: #fff;
+}
+.container{
+  max-width: 950px;
+  width: 100%;
+  padding: 40px 50px  40px  40px;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .topic{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .list{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-right: 50px;
+  position: relative;
+}
+.content .list label{
+  height: 60px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 60px;
+  cursor: pointer;
+  padding-left: 25px;
+  transition: all 0.5s ease;
+  color: #333;
+  z-index: 12;
+}
+#home:checked ~ .list label.home,
+#blog:checked ~ .list label.blog,
+#help:checked ~ .list label.help,
+#code:checked ~ .list label.code,
+#about:checked ~ .list label.about{
+  color: #fff;
+}
+.content .list label:hover{
+  color: #6d50e2;
+}
+.content .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  background: #6d50e2;
+  transition: all 0.4s ease;
+}
+#home:checked ~ .list .slider{
+  top: 0;
+}
+#blog:checked ~ .list .slider{
+  top: 60px;
+}
+#help:checked ~ .list .slider{
+  top: 120px;
+}
+#code:checked ~ .list .slider{
+  top: 180px;
+}
+#about:checked ~ .list .slider{
+  top: 240px;
+}
+.content .text-content{
+  width: 80%;
+  height: 100%;
+}
+.content .text{
+  display: none;
+}
+.content .text .title{
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.content .text p{
+  text-align: justify;
+}
+.content .text-content .home{
+  display: block;
+}
+#home:checked ~ .text-content .home,
+#blog:checked ~ .text-content .blog,
+#help:checked ~ .text-content .help,
+#code:checked ~ .text-content .code,
+#about:checked ~ .text-content .about{
+  display: block;
+}
+#blog:checked ~ .text-content .home,
+#help:checked ~ .text-content .home,
+#code:checked ~ .text-content .home,
+#about:checked ~ .text-content .home{
+  display: none;
+}
+.content input{
+  display: none;
+}
+
+
+
+
+/* TODO HEADER SECTION */
 .header {
   width: 1280px;
   height: 80px;
