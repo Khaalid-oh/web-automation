@@ -2,6 +2,7 @@
 
 {/* TODO TAB DROPDOWN */}
 function openCity(evt, cityName) {
+ /* trunk-ignore(prettier/SyntaxError) */
  var i, tabcontent, tablinks;
 tabcontent = document.getElementsByClassName("tabcontent")
   for (i = 0; i < tabcontent.length; i++) {
