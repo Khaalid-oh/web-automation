@@ -1,4 +1,24 @@
-  .tab-container {
+.mega-menu-resources {
+  display: none;
+  position: absolute;
+  top: 100%;
+   width: 1000px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  z-index: 1000;
+  margin-top: 70px;
+}
+
+.mega-menu-resources.open{
+  display: block;
+  width: 1000px;
+}
+
+
+
+.tab-container-resources {
     border: 1px solid #f9daab;
     border-radius: 14px;
     padding: 20px;
@@ -52,7 +72,7 @@
   }
   
   
-  .tab-container::after {
+  .tab-container-resources::after {
     content: "";
     display: table;
     clear: both;

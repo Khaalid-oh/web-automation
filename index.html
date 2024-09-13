@@ -8,8 +8,9 @@
   <link rel="stylesheet" type="text/css" href="/global.css" />
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/solution-menu.css"/>
-  <link rel="stylesheet" href="/company.css"/>
-  <link rel="stylesheet" href="/resources.css"/>
+ <link rel="stylesheet" href="/company.css"/>
+ <!-- <link rel="stylesheet" href="/resources.css"/>  -->
+
   <title>Web Automation</title>
 </head>
 
@@ -228,14 +229,14 @@
         <!-- todo SOLUTIONS menu -->
         <li class="has-dropdown" id="solutions-dropdown">Solutions<img src="/assets/chevron-down.svg" alt="Dropdown Icon"
           class="dropdown-icon"/>
-          <div class="mega-menu" id="solutions-mega-menu">
+          <div class="mega-menu-solution" id="solutions-mega-menu">
             <div style="font-weight: 300; margin-bottom: 20px;">
                <p>Solutions</p>
                <p style="font-size: small;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, provident.</p>
             </div>
             <div class="tab">
-              <button class="tablinks" onclick="openTab(event, 'Industries')" id="defaultOpen">Industries</button>
-             <button class="tablinks" onclick="openTab(event, 'use-cases')">Use Case</button>
+              <button class="tablinks button1" onclick="openTab(event, 'Industries')" id="defaultOpen">Industries</button>
+             <button class="tablinks button2" onclick="openTab(event, 'use-cases')">Use Case</button>
             </div>
 
             <div id="Industries" class="tabcontent">
@@ -379,33 +380,33 @@
         <!-- todo COMPANY menu -->
         <li class="has-dropdown"> Company<img src="/assets/chevron-down.svg" alt="Dropdown Icon"
             class="dropdown-icon" />
-            <div class="mega-menu">
+            <div class="mega-menu-company">
               <div class="company-container">
               <div class="sidebar">
                   <ul>
                       <li>
-                          <span class="icon">
+                          <span class="icon-container">
                               <img src="/assets/user-icon.png" alt="">
                           </span>
-                          <div class="text">
+                          <div class="company-text">
                               <h3>About us</h3>
                               <p>Learn how we simplify web data extraction.</p>
                           </div>
                       </li>
                       <li>
-                          <span class="icon">
+                          <span class="icon-container">
                               <img src="/assets/user-icon.png" alt="">
                           </span>
-                          <div class="text">
+                          <div class="company-text">
                               <h3>Features</h3>
                               <p>Discover our powerful, no-code extractors.</p>
                           </div>
                       </li>
                       <li>
-                          <span class="icon">
+                          <span class="icon-container">
                               <img src="/assets/user-icon.png" alt="">
                           </span>
-                          <div class="text">
+                          <div class="company-text">
                               <h3>Request Demo</h3>
                               <p>See our data extraction in action.</p>
                           </div>
@@ -418,7 +419,7 @@
                       <div class="story">
                           <img src="https://img.freepik.com/free-vector/ai-technology-microchip-background-vector-digital-transformation-concept_53876-112222.jpg" alt="AI">
                           <div>
-                              <span>Generative AI startup </span>
+                              <span class="story-heading">Generative AI startup </span>
                               <span style="margin-top: -5px;">leverages Ready Dataset...</span>
                           <span style="color: rgba(21, 25, 29, 0.611);">Jump right in — get an</span>
                           <span style="color: rgba(21, 25, 29, 0.611);">overview of the basics and fu...</span>
@@ -439,322 +440,8 @@
           </div>
           </li>
           <!-- todo RESOURCES menu -->
-        <li class="has-dropdown" id="solutions-dropdown"> Resources <img src="/assets/chevron-down.svg" alt="Dropdown Icon"
+        <li class="has-dropdown"> Resources <img src="/assets/chevron-down.svg" alt="Dropdown Icon"
             class="dropdown-icon" />
-          <div class="mega-menu" id="solutions-mega-menu">
-            <div class="tab-container">
-              <h2>Resources</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, provident.</p>
-
-              <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'blog')" id="defaultOpen">Blog</button>
-                <button class="tablinks" onclick="openCity(event, 'customer-stories')">Customers Stories</button>
-                <button class="tablinks" onclick="openCity(event, 'brand-comparison')">Brand Comparisons</button>
-                <button class="tablinks" onclick="openCity(event, 'chat')">Chat to Support</button>
-
-
-                <button class="tablinks" onclick="openTab(event, 'Industries')" id="defaultOpen">Industries</button>
-                <button class="tablinks" onclick="openTab(event, 'use-cases')">Use Case</button>
-              </div>
-              <div id="blog" class="tabcontent">
-                <div class="container">
-                  <a href="#" class="category">
-                      <div class="icon"><img src="/assets/building-07.png" alt="Real Estate Icon"></div>
-                      <div class="text">
-                          <h3>Academy</h3>
-                          <p>The latest industry news, updates and...</p>
-                      </div>
-                  </a>
-                  <a href="#" class="category">
-                      <div class="icon"><img src="/assets/shopping-bag-03.png" alt="E-commerce Icon"></div>
-                      <div class="text">
-                          <h3>Documentation</h3>
-                          <p>All the boring stuff that you (hopefully...</p>
-                      </div>
-                  </a>
-                  <a href="#" class="category">
-                      <div class="icon"><img src="/assets/users-up.png" alt="Job Data Icon"></div>
-                      <div class="text">
-                          <h3>Video Tutorials</h3>
-                          <p>Get up and running on new features an...</p>
-                      </div>
-                  </a>
-                  <a href="#" class="category">
-                      <div class="icon"><img src="/assets/book-closed.png" alt="Academic Icon"></div>
-                      <div class="text">
-                          <h3>FAQ</h3>
-                          <p>Complete reference documentation for ...</p>
-                      </div>
-                  </a>
-                  <a href="#" class="category">
-                      <div class="icon"><img src="/assets/building-08.png" alt="Finance Icon"></div>
-                      <div class="text">
-                          <h3>Best Practices</h3>
-                          <p>Learn how our customers are mak...</p>
-                      </div>
-                  </a>
-                  <a href="#" class="category">
-                      <div class="icon"><img src="/assets/plane.png" alt="Travel Icon"></div>
-                      <div class="text">
-                          <h3>Help and Supports</h3>
-                          <p>Learn, fix a problem and get answers to...</p>
-                      </div>
-                  </a>
-                  <a href="#" class="category">
-                      <div class="icon"><img src="/assets/scales-01.png" alt="Sales Icon"></div>
-                      <div class="text">
-                          <h3>Sales & Marketing</h3>
-                          <p>Get up and running on new features and techniques.</p>
-                      </div>
-                  </a>
-              </div>
-              </div>
-              <div id="customer-stories" class="tabcontent">
-                  <div class="container">
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/building-07.png" alt="Real Estate Icon"></div>
-                          <div class="text">
-                              <h3>AI Training</h3>
-                              <p>The latest industry news, updates and info.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/shopping-bag-03.png" alt="E-commerce Icon"></div>
-                          <div class="text">
-                              <h3>Social Media</h3>
-                              <p>All the boring stuff that you (hopefully won’t) need.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/users-up.png" alt="Job Data Icon"></div>
-                          <div class="text">
-                              <h3>Sentimental Analysis</h3>
-                              <p>Learn how our customers are making big changes.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/book-closed.png" alt="Academic Icon"></div>
-                          <div class="text">
-                              <h3>Market Research</h3>
-                              <p>Learn, fix a problem, and get answers to your questions.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/shopping-bag-03.png" alt="E-commerce Icon"></div>
-                          <div class="text">
-                              <h3>Price Comparison</h3>
-                              <p>All the boring stuff that you (hopefully won’t) need.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/users-up.png" alt="Job Data Icon"></div>
-                          <div class="text">
-                              <h3>Web Enterprise Automation</h3>
-                              <p>Learn how our customers are making big changes.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/book-closed.png" alt="Academic Icon"></div>
-                          <div class="text">
-                              <h3>Managed Data Service</h3>
-                              <p>Learn, fix a problem, and get answers to your questions.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/users-up.png" alt="Job Data Icon"></div>
-                          <div class="text">
-                              <h3>Filmo graphic data</h3>
-                              <p>Learn how our customers are making big changes.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/book-closed.png" alt="Academic Icon"></div>
-                          <div class="text">
-                              <h3>Car Rental</h3>
-                              <p>Learn, fix a problem, and get answers to your questions.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/building-08.png" alt="Finance Icon"></div>
-                          <div class="text">
-                              <h3>Software Product</h3>
-                              <p>Get up and running on new features and techniques.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/plane.png" alt="Travel Icon"></div>
-                          <div class="text">
-                              <h3>OTA Data</h3>
-                              <p>Complete reference documentation for API.</p>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-              <div id="brand-comparison" class="tabcontent">
-                  <div class="container">
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/building-07.png" alt="Real Estate Icon"></div>
-                          <div class="text">
-                              <h3>AI Training</h3>
-                              <p>The latest industry news, updates and info.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/shopping-bag-03.png" alt="E-commerce Icon"></div>
-                          <div class="text">
-                              <h3>Social Media</h3>
-                              <p>All the boring stuff that you (hopefully won’t) need.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/users-up.png" alt="Job Data Icon"></div>
-                          <div class="text">
-                              <h3>Sentimental Analysis</h3>
-                              <p>Learn how our customers are making big changes.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/book-closed.png" alt="Academic Icon"></div>
-                          <div class="text">
-                              <h3>Market Research</h3>
-                              <p>Learn, fix a problem, and get answers to your questions.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/shopping-bag-03.png" alt="E-commerce Icon"></div>
-                          <div class="text">
-                              <h3>Price Comparison</h3>
-                              <p>All the boring stuff that you (hopefully won’t) need.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/users-up.png" alt="Job Data Icon"></div>
-                          <div class="text">
-                              <h3>Web Enterprise Automation</h3>
-                              <p>Learn how our customers are making big changes.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/book-closed.png" alt="Academic Icon"></div>
-                          <div class="text">
-                              <h3>Managed Data Service</h3>
-                              <p>Learn, fix a problem, and get answers to your questions.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/users-up.png" alt="Job Data Icon"></div>
-                          <div class="text">
-                              <h3>Filmo graphic data</h3>
-                              <p>Learn how our customers are making big changes.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/book-closed.png" alt="Academic Icon"></div>
-                          <div class="text">
-                              <h3>Car Rental</h3>
-                              <p>Learn, fix a problem, and get answers to your questions.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/building-08.png" alt="Finance Icon"></div>
-                          <div class="text">
-                              <h3>Software Product</h3>
-                              <p>Get up and running on new features and techniques.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/plane.png" alt="Travel Icon"></div>
-                          <div class="text">
-                              <h3>OTA Data</h3>
-                              <p>Complete reference documentation for API.</p>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-              <div id="chat" class="tabcontent">
-                  <div class="container">
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/building-07.png" alt="Real Estate Icon"></div>
-                          <div class="text">
-                              <h3>AI Training</h3>
-                              <p>The latest industry news, updates and info.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/shopping-bag-03.png" alt="E-commerce Icon"></div>
-                          <div class="text">
-                              <h3>Social Media</h3>
-                              <p>All the boring stuff that you (hopefully won’t) need.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/users-up.png" alt="Job Data Icon"></div>
-                          <div class="text">
-                              <h3>Sentimental Analysis</h3>
-                              <p>Learn how our customers are making big changes.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/book-closed.png" alt="Academic Icon"></div>
-                          <div class="text">
-                              <h3>Market Research</h3>
-                              <p>Learn, fix a problem, and get answers to your questions.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/shopping-bag-03.png" alt="E-commerce Icon"></div>
-                          <div class="text">
-                              <h3>Price Comparison</h3>
-                              <p>All the boring stuff that you (hopefully won’t) need.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/users-up.png" alt="Job Data Icon"></div>
-                          <div class="text">
-                              <h3>Web Enterprise Automation</h3>
-                              <p>Learn how our customers are making big changes.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/book-closed.png" alt="Academic Icon"></div>
-                          <div class="text">
-                              <h3>Managed Data Service</h3>
-                              <p>Learn, fix a problem, and get answers to your questions.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/users-up.png" alt="Job Data Icon"></div>
-                          <div class="text">
-                              <h3>Filmo graphic data</h3>
-                              <p>Learn how our customers are making big changes.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/book-closed.png" alt="Academic Icon"></div>
-                          <div class="text">
-                              <h3>Car Rental</h3>
-                              <p>Learn, fix a problem, and get answers to your questions.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/building-08.png" alt="Finance Icon"></div>
-                          <div class="text">
-                              <h3>Software Product</h3>
-                              <p>Get up and running on new features and techniques.</p>
-                          </div>
-                      </a>
-                      <a href="#" class="category">
-                          <div class="icon"><img src="/assets/plane.png" alt="Travel Icon"></div>
-                          <div class="text">
-                              <h3>OTA Data</h3>
-                              <p>Complete reference documentation for API.</p>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-              </div>
-
-          </div>
           </li>
         <li class="has-dropdown"> Pricing </li>
       </ul>
@@ -1480,10 +1167,8 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
   }
 
-  // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
 
-  // Prevent the mega menu from closing when interacting with the tabs
   document.getElementById('solutions-mega-menu').addEventListener('click', function (event) {
     event.stopPropagation();
   });
@@ -1497,7 +1182,7 @@ function openTab(evt, tabName) {
     }
   });
 
-  // Re-open the mega menu when clicking on the dropdown
+  // Re-open the mega menu
   document.getElementById('solutions-dropdown').addEventListener('click', function () {
     const megaMenu = document.getElementById('solutions-mega-menu');
     if (megaMenu.style.display === 'block') {
