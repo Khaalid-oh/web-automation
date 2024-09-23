@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .slider-container {
     display: flex;
-    padding: 40px;
+    /* padding: 40px; */
+    width: 1440px;
+    margin: 50px auto;
     overflow: hidden;
+    position: relative;
 }
 
 .slider-track {
     display: flex;
-    transition: transform 0.5s ease; /* Smooth transition */
+    transition: transform 0.5s ease;
 }
 
 .wrapper {
@@ -14,19 +19,40 @@
     margin: 10px;
     height: 500px;
     width: 350px; 
-    position: relative;
-    background-color: rgb(255, 63, 0)
+    background-color: #FF4000;
+
+    flex: 0 0 15%;
 }
 
 .wrapper-two {
     padding: 10px;
     margin: 10px;
     height: 500px;
-    width: 350px; 
+    width: 350px;
     position: relative;
-    background-color: rgb(37, 118, 7)
+    background-color: #079455;
+    flex: 0 0 15%;
 }
 
+.wrapper-three {
+    padding: 10px;
+    margin: 10px;
+    height: 500px;
+    width: 350px; 
+    position: relative;
+    background-color: #1570EF;
+    flex: 0 0 15%;
+}
+
+.wrapper-four {
+    padding: 10px;
+    margin: 10px;
+    height: 500px;
+    width: 350px;
+    position: relative;
+    background-color: #444CE7;
+    flex: 0 0 15%;
+}
 
 .wrapper-head {
     display: flex;
@@ -39,10 +65,11 @@
 .wrapper-head h1 {
     font-size: 30px;
     font-weight: 600;
+    opacity: 0.84;
 }
 
 .wrapper-content {
-    background-color: rgba(247, 161, 151, 0.471);
+    background-color: rgba(255, 255, 255, 0.30);
     color: #fff;
     padding: 20px;
     margin: 30% 10px;
@@ -53,13 +80,17 @@
 }
 
 .wrapper-content h1 {
-    font-weight: 500;
     font-size: 30px;
+font-weight: 500;
+line-height: 38px;
+font-family: "Inter", sans-serif;
 }
 
 .wrapper-content p {
     font-size: 18px;
-    font-weight: 400;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
 }
 
 .wrapper-btn {
@@ -72,6 +103,10 @@
 .wrapper-btn a {
     text-decoration: none;
     color: #fff;
+    font-family: "Inter", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
 }
 
 .pagination-btn {

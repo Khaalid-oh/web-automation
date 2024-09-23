@@ -14,6 +14,7 @@ background-color: #fff;
   border: 1px solid #e0e0e0;
   z-index: 1000;
 	/* transition: all 0.5s ease; */
+
 }
 
 
@@ -32,11 +33,6 @@ position: absolute;
   flex-direction: column;
 }
 
-/* .tab.active {
-  color: #fff;
-  background-color: #CC2B02;
-  border-color: none;
-} */
 
 .tab .button1 {
   background-color: #fff;
@@ -51,6 +47,8 @@ position: absolute;
   margin: 10px;
 }
 
+
+
 .tab .button2{
   background-color: #fff;
   border-radius: 6px;
@@ -63,8 +61,6 @@ position: absolute;
   padding: 10px 12px 10px;
   margin: 10px;
 }
-
-
 
  .tab button:hover {
   background-color: #ddd;

@@ -1,21 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .team-section {
-    background-color: #7777770c;
+    background-color: #F9FAFB;
     text-align: center;
     padding: 50px 0;
-    max-width: 1400px;
     margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .team-section h2 {
-    font-size: 32px;
+    color: #101828;
     margin-bottom: 10px;
     font-weight: 600;
+    font-size: 36px;
+font-weight: 600;
+line-height: 44px;
+letter-spacing: -0.72px;
 }
 
 .team-section > p {
-    font-size: 1.2em;
     margin-bottom: 50px;
-    color: #666;
+    color: #475467;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
 }
 
 .team-container {
@@ -49,22 +58,29 @@
 }
 
 .team-member h3 {
-    font-size: 1.2em;
+
     margin-bottom: 3px;
     color: #333;
     font-weight: 500;
+    font-size: 18px;
+font-weight: 500;
+line-height: 28px;
 }
 
 .team-member .role {
-    font-size: 1em;
-    color: #d9534f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #B93815;
     margin-bottom: 10px;
 }
 
-.team-member p {
-    font-size: 0.9em;
-    color: #777;
+.team-member  .desc {
+    color: #475467;
     margin-bottom: 20px;
+    font-size: 16px;
+font-weight: 300;
+line-height: 24px;
 }
 
 .icons {
@@ -74,9 +90,8 @@
 }
 
 .icons a img {
-    width: 24px;
-    height: 24px;
-    filter: grayscale(100%);
+    width: 20px;
+    height: 20px;
     /* transition: filter 0.3s ease; */
 }
 

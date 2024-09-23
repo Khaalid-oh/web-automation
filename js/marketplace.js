@@ -84,19 +84,21 @@ nextButton.addEventListener('click', (e) => {
     }
 });
 
-// Event listeners for sidebar tabs
+
+// Event listeners for sidebar tabs (replace click event for <a> with <button>)
 tabs.forEach(tab => {
     tab.addEventListener('click', function () {
         // Set active class on clicked tab
         tabs.forEach(t => t.classList.remove('active'));
         this.classList.add('active');
 
+        // Get category from the parent <li>
         const category = this.getAttribute('data-category');
         filterCards(category);
     });
 });
 
-// view all
+// Initial call to display all cards
 filterCards('all');
 
 
