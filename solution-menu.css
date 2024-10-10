@@ -1,0 +1,137 @@
+.mega-menu-solution {
+  overflow: scroll;
+  display: none;
+  position: absolute;
+  width: 1000px;
+  top: 50px;
+  left: -300px;
+  padding: 10px;
+  border-radius: 10px;
+height: 75vh;
+margin: auto;
+background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  z-index: 1000;
+	/* transition: all 0.5s ease; */
+
+}
+
+
+.tab {
+position: absolute;
+  width: 50%;
+  /* min-height: fit-content; */
+  border-radius: 14px;
+  /* border: 1px solid #f9daab; */
+  height: 50%;
+  width: 20%;
+  left: 20px;
+  background-color: #FFF9F3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.tab .button1 {
+  background-color: #fff;
+  border-radius: 6px;
+  color: #CC2B02;
+  text-align: start;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #F7B27A;
+  font-size: 14px;
+  padding: 10px 12px 10px;
+  margin: 10px;
+}
+
+
+
+.tab .button2{
+  background-color: #fff;
+  border-radius: 6px;
+  color: #CC2B02;
+  text-align: start;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #F7B27A;
+  font-size: 14px;
+  padding: 10px 12px 10px;
+  margin: 10px;
+}
+
+ .tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  color: #fff;
+  background-color: #CC2B02;
+  border-color: #CC2B02;
+}
+
+
+.tabcontent {
+position: absolute;
+  padding: 0px 12px;
+  right: 0;
+  width: 75%;
+  border-left: none;
+}
+
+
+/* .mega-menu-solution::after {
+  content: "";
+  display: ;
+  clear: both;
+} */
+
+.container-tab {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  margin: auto;
+  max-width: 1200px;
+}
+
+.category {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  width: 45%; 
+  /* overflow: scroll; */
+}
+
+.category:hover{
+  background-color: rgba(128, 128, 128, 0.061);
+} 
+
+.icon {
+  margin-right: 15px;
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.text h3 {
+  font-size: 16px;
+  color: #101828;
+  margin: 0;
+  font-weight: 500;
+}
+
+.text p {
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 5px;
+  font-weight: 400;
+}
