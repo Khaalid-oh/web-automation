@@ -83,7 +83,7 @@ body {
 }
 .hero-text {
   display: flex;
-  gap: 12px;
+  gap: 24px;
   flex-direction: column;
   justify-content: center;
 }
