@@ -590,11 +590,11 @@ button {
   line-height: 24px;
 }
 .custom-frame {
+  position: relative;
   display: flex;
   padding-left: 42px;
   justify-content: flex-end;
   align-items: center;
-  border: 1.2px solid;
   border-radius: 24px;
   border-image: linear-gradient(90deg, #ef4523 0%, #03bfff 100%);
   background-origin: border-box;
@@ -602,8 +602,15 @@ button {
   border-image-slice: 1;
 }
 
-/* .custom-frame img {
+/* .custom-frame::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 24px;
+  border-image: linear-gradient(90deg, #ef4523 0%, #03bfff 100%);
 } */
 
 .custom-frame div {
@@ -640,6 +647,7 @@ button {
 .custom-frame span {
   color: #e04f16;
 }
+
 .custom-frame button {
   border-radius: 8px;
   border: 1px solid #f7b27a;
