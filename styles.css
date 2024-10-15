@@ -595,6 +595,7 @@ button {
   padding-left: 42px;
   justify-content: flex-end;
   align-items: center;
+  border: 2px solid;
   border-radius: 24px;
   border-image: linear-gradient(90deg, #ef4523 0%, #03bfff 100%);
   background-origin: border-box;
