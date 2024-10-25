@@ -3,10 +3,790 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="./global.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./solution-menu.css" />
+    <link rel="stylesheet" href="./company.css" />
+    <link rel="stylesheet" href="./resources.css" />
     <link rel="stylesheet" href="./price.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+      <div class="header">
+        <a href="/"><img src="./public/wa_12.png" alt="logo" width="142" height="36" /></a>
+        <ul class="top-ul menu">
+          <li class="has-dropdown" id="product-dropdown">
+            Product<img
+              src="./assets/chevron-down.svg"
+              alt="Dropdown Icon"
+              class="dropdown-icon"
+            />
+            <div class="mega-menu">
+              <div class="mega-content">
+                <p>Products</p>
+                <a href="#">Explore Marketplace</a>
+              </div>
+              <div style="margin-bottom: 20px; margin-top: -10px">
+                <p style="font-size: small">
+                  Tailored data extraction for every industry and use cases
+                </p>
+              </div>
+              <div class="menu-column">
+                <div class="menu-column-title">
+                  <p>Pre-Built Extractors</p>
+                  <img src="./assets/chevron-right.svg" alt="chevron-icon" />
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="menu-column-card">
+                        <img src="./assets/amazon.png" alt="" />
+                        <div>
+                          <p>Amazon Product Details</p>
+                          <div>
+                            <img src="./assets/user-icon-blue.svg" alt="" />
+                            <span>471</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="menu-column-card">
+                        <img src="./assets/google.svg" alt="" />
+                        <div>
+                          <p>Google Product Details</p>
+                          <div>
+                            <img src="./assets/user-icon-blue.svg" alt="" />
+                            <span>471</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="menu-column-card">
+                        <img src="./assets/shopify.png" alt="" />
+                        <div>
+                          <p>Shopify Product Details</p>
+                          <div>
+                            <img src="./assets/user-icon-blue.svg" alt="" />
+                            <span>471</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="menu-column-card">
+                        <img src="./assets/linked-in.svg" alt="" />
+                        <div>
+                          <p>Shopify Product Details</p>
+                          <div>
+                            <img src="./assets/user-icon-blue.svg" alt="" />
+                            <span>471</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="menu-column-card-btn">
+                        <img src="./assets/plus.svg" alt="" />
+                        <span> Add more </span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-column">
+                <div class="menu-column-title">
+                  <p>Web Datasets</p>
+                  <img src="./assets/chevron-right.svg" alt="chevron" />
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="menu-column-card">
+                        <img src="./assets/asana.svg" alt="" />
+                        <div>
+                          <p>Amazon Product Details</p>
+                          <div>
+                            <img src="./assets/user-icon-blue.svg" alt="" />
+                            <span>471</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="menu-column-card">
+                        <img src="./assets/facebook.svg" alt="" />
+                        <div>
+                          <p>Google Product Details</p>
+                          <div>
+                            <img src="./assets/user-icon-blue.svg" alt="" />
+                            <span>471</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="menu-column-card">
+                        <img src="./assets/shopify.png" alt="" />
+                        <div>
+                          <p>Shopify Product Details</p>
+                          <div>
+                            <img src="./assets/user-icon-blue.svg" alt="" />
+                            <span>471</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="menu-column-card">
+                        <img src="./assets/quora.svg" alt="" />
+                        <div>
+                          <p>Shopify Product Details</p>
+                          <div>
+                            <img src="./assets/user-icon-blue.svg" alt="" />
+                            <span>471</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="menu-column-card-btn">
+                        <img src="./assets/plus.svg" alt="" />
+                        <span> Add more </span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-column">
+                <div class="menu-column-title">
+                  <p>WebAutomation Enterprise</p>
+                  <img src="./assets/chevron-right.svg" alt="chevron-icon" />
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="menu-column-card">
+                        <img src="./assets/atlassian.svg" alt="" />
+                        <div>
+                          <p>Amazon Product Details</p>
+                          <div>
+                            <img src="./assets/user-icon-blue.svg" alt="" />
+                            <span>471</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="menu-column-card">
+                        <img src="./assets/webautomation.svg" alt="" />
+                        <div>
+                          <p>Webautomation API</p>
+                          <div>
+                            <img src="./assets/user-icon-blue.svg" alt="" />
+                            <span>471</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="menu-column-card">
+                        <img src="./assets/webautomation2.svg" alt="" />
+                        <div>
+                          <p>Webautomation Services</p>
+                          <div>
+                            <img src="./assets/user-icon-blue.svg" alt="" />
+                            <span>471</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="menu-column-card">
+                        <img src="./assets/status.svg" alt="" />
+                        <div>
+                          <p>Shopify Product Details</p>
+                          <div>
+                            <img src="./assets/user-icon-blue.svg" alt="" />
+                            <span>471</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- todo SOLUTIONS menu -->
+          <li class="has-dropdown" id="solutions-dropdown">
+            Solutions<img
+              src="./assets/chevron-down.svg"
+              alt="Dropdown Icon"
+              class="dropdown-icon"
+            />
+            <div class="mega-menu-solution" id="solutions-mega-menu">
+              <div style="font-weight: 300; margin-bottom: 20px">
+                <p>Solutions</p>
+                <p style="font-size: small">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Numquam, provident.
+                </p>
+              </div>
+              <div class="tab">
+                <button
+                  class="tablinks button1"
+                  onclick="openTab(event, 'Industries')"
+                  id="defaultOpen"
+                >
+                  Industries
+                </button>
+                <button
+                  class="tablinks button2"
+                  onclick="openTab(event, 'use-cases')"
+                >
+                  Use Case
+                </button>
+              </div>
+
+              <div id="Industries" class="tabcontent">
+                <div class="container-tab">
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img
+                        src="./assets/building-07.png"
+                        alt="Real Estate Icon"
+                      />
+                    </div>
+                    <div class="text">
+                      <h3>Real Estate</h3>
+                      <p>The latest industry news, updates and info.</p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img
+                        src="./assets/shopping-bag-03.png"
+                        alt="E-commerce Icon"
+                      />
+                    </div>
+                    <div class="text">
+                      <h3>E-commerce & Retail</h3>
+                      <p>
+                        All the boring stuff that you (hopefully won’t) need.
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img src="./assets/users-up.png" alt="Job Data Icon" />
+                    </div>
+                    <div class="text">
+                      <h3>Job Data & Human Capital</h3>
+                      <p>Learn how our customers are making big changes.</p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img src="./assets/book-closed.png" alt="Academic Icon" />
+                    </div>
+                    <div class="text">
+                      <h3>Academic Research & Journalism</h3>
+                      <p>
+                        Learn, fix a problem, and get answers to your questions.
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img src="./assets/building-08.png" alt="Finance Icon" />
+                    </div>
+                    <div class="text">
+                      <h3>Finance & Investment Research</h3>
+                      <p>Get up and running on new features and techniques.</p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img src="./assets/plane.png" alt="Travel Icon" />
+                    </div>
+                    <div class="text">
+                      <h3>Travel, Hotel & Airline Data</h3>
+                      <p>Complete reference documentation for API.</p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img src="./assets/scales-01.png" alt="Sales Icon" />
+                    </div>
+                    <div class="text">
+                      <h3>Sales & Marketing</h3>
+                      <p>Get up and running on new features and techniques.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div id="use-cases" class="tabcontent">
+                <div class="container-tab">
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img
+                        src="./assets/building-07.png"
+                        alt="Real Estate Icon"
+                      />
+                    </div>
+                    <div class="text">
+                      <h3>AI Training</h3>
+                      <p>The latest industry news, updates and info.</p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img
+                        src="./assets/shopping-bag-03.png"
+                        alt="E-commerce Icon"
+                      />
+                    </div>
+                    <div class="text">
+                      <h3>Social Media</h3>
+                      <p>
+                        All the boring stuff that you (hopefully won’t) need.
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img src="./assets/users-up.png" alt="Job Data Icon" />
+                    </div>
+                    <div class="text">
+                      <h3>Sentimental Analysis</h3>
+                      <p>Learn how our customers are making big changes.</p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img src="./assets/book-closed.png" alt="Academic Icon" />
+                    </div>
+                    <div class="text">
+                      <h3>Market Research</h3>
+                      <p>
+                        Learn, fix a problem, and get answers to your questions.
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img
+                        src="./assets/shopping-bag-03.png"
+                        alt="E-commerce Icon"
+                      />
+                    </div>
+                    <div class="text">
+                      <h3>Price Comparison</h3>
+                      <p>
+                        All the boring stuff that you (hopefully won’t) need.
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img src="./assets/users-up.png" alt="Job Data Icon" />
+                    </div>
+                    <div class="text">
+                      <h3>Web Enterprise Automation</h3>
+                      <p>Learn how our customers are making big changes.</p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img src="./assets/book-closed.png" alt="Academic Icon" />
+                    </div>
+                    <div class="text">
+                      <h3>Managed Data Service</h3>
+                      <p>
+                        Learn, fix a problem, and get answers to your questions.
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img src="./assets/users-up.png" alt="Job Data Icon" />
+                    </div>
+                    <div class="text">
+                      <h3>Filmo graphic data</h3>
+                      <p>Learn how our customers are making big changes.</p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img src="./assets/book-closed.png" alt="Academic Icon" />
+                    </div>
+                    <div class="text">
+                      <h3>Car Rental</h3>
+                      <p>
+                        Learn, fix a problem, and get answers to your questions.
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img src="./assets/building-08.png" alt="Finance Icon" />
+                    </div>
+                    <div class="text">
+                      <h3>Software Product</h3>
+                      <p>Get up and running on new features and techniques.</p>
+                    </div>
+                  </a>
+                  <a href="#" class="category">
+                    <div class="icon">
+                      <img src="./assets/plane.png" alt="Travel Icon" />
+                    </div>
+                    <div class="text">
+                      <h3>OTA Data</h3>
+                      <p>Complete reference documentation for API.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- todo COMPANY menu -->
+          <li class="has-dropdown">
+            Company<img
+              src="./assets/chevron-down.svg"
+              alt="Dropdown Icon"
+              class="dropdown-icon"
+            />
+            <div class="mega-menu-company">
+              <div class="company-container">
+                <div class="sidebar">
+                  <ul>
+                    <li>
+                      <span class="icon-container">
+                        <img src="./assets/user-icon.png" alt="" />
+                      </span>
+                      <div class="company-text">
+                        <h3>About us</h3>
+                        <p>Learn how we simplify web data extraction.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="icon-container">
+                        <img src="./assets/user-icon.png" alt="" />
+                      </span>
+                      <div class="company-text">
+                        <h3>Features</h3>
+                        <p>Discover our powerful, no-code extractors.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="icon-container">
+                        <img src="./assets/user-icon.png" alt="" />
+                      </span>
+                      <div class="company-text">
+                        <h3>Request Demo</h3>
+                        <p>See our data extraction in action.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="main-content">
+                  <h3>Customer Stories</h3>
+                  <div class="stories">
+                    <div class="story">
+                      <img
+                        src="https://img.freepik.com/free-vector/ai-technology-microchip-background-vector-digital-transformation-concept_53876-112222.jpg"
+                        alt="AI"
+                      />
+                      <div>
+                        <span class="story-heading"
+                          >Generative AI startup
+                        </span>
+                        <span style="margin-top: -5px"
+                          >leverages Ready Dataset...</span
+                        >
+                        <span style="color: rgba(21, 25, 29, 0.611)"
+                          >Jump right in — get an</span
+                        >
+                        <span style="color: rgba(21, 25, 29, 0.611)"
+                          >overview of the basics and fu...</span
+                        >
+                      </div>
+                    </div>
+                    <div class="story">
+                      <img
+                        src="https://img.freepik.com/free-vector/ai-technology-microchip-background-vector-digital-transformation-concept_53876-112222.jpg"
+                        alt="AI"
+                      />
+                      <div>
+                        <span>How WebAutomation is</span>
+                        <span style="margin-top: -5px"
+                          >increasing innovation in t...</span
+                        >
+                        <span style="color: rgba(21, 25, 29, 0.611)"
+                          >The latest best practices and...</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="all-stories">All Customer Stories →</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- todo RESOURCES menu -->
+          <li class="has-dropdown" id="resources-dropdown">
+            Resources<img
+              src="./assets/chevron-down.svg"
+              alt="Dropdown Icon"
+              class="dropdown-icon"
+            />
+            <div class="mega-menu-resources" id="resources-mega-menu">
+              <div style="font-weight: 300; margin-bottom: 20px">
+                <p>Resources</p>
+                <p style="font-size: small">
+                  Get started and learn more about our products.
+                </p>
+              </div>
+              <div class="tab-resources">
+                <button
+                  class="restablinks res-button1"
+                  onclick="openResourcesTab(event, 'blog')"
+                  id="resDefaultOpen"
+                >
+                  Blog
+                </button>
+                <button
+                  class="restablinks res-button2"
+                  onclick="openResourcesTab(event, 'customer-stories')"
+                >
+                  Customer Stories
+                </button>
+                <button
+                  class="restablinks res-button3"
+                  onclick="openResourcesTab(event, 'brand-comparisons')"
+                >
+                  Brand Comparions
+                </button>
+                <button
+                  class="restablinks res-button4"
+                  onclick="openResourcesTab(event, 'chat-to-support')"
+                >
+                  Chat to Support
+                </button>
+              </div>
+              <div id="blog" class="restabcontent">
+                <h3>Help centre</h3>
+                <div class="res-container-tab">
+                  <a href="#" class="res-category">
+                    <div class="res-icon">
+                      <img
+                        src="./assets/building-07.png"
+                        alt="Real Estate Icon"
+                      />
+                    </div>
+                    <div class="res-text">
+                      <h3>Academy</h3>
+                      <p>The latest industry news, updates and info..</p>
+                    </div>
+                  </a>
+                  <a href="#" class="res-category">
+                    <div class="res-icon">
+                      <img
+                        src="./assets/shopping-bag-03.png"
+                        alt="E-commerce Icon"
+                      />
+                    </div>
+                    <div class="res-text">
+                      <h3>Documentation</h3>
+                      <p>Get up and running on new features on...</p>
+                    </div>
+                  </a>
+                  <a href="#" class="res-category">
+                    <div class="res-icon">
+                      <img
+                        src="./assets/building-07.png"
+                        alt="Real Estate Icon"
+                      />
+                    </div>
+                    <div class="res-text">
+                      <h3>Video tutorials</h3>
+                      <p>The latest industry news, updates and info..</p>
+                    </div>
+                  </a>
+                  <a href="#" class="res-category">
+                    <div class="res-icon">
+                      <img
+                        src="./assets/shopping-bag-03.png"
+                        alt="E-commerce Icon"
+                      />
+                    </div>
+                    <div class="res-text">
+                      <h3>FAQ</h3>
+                      <p>Get up and running on new features on...</p>
+                    </div>
+                  </a>
+                  <a href="#" class="res-category">
+                    <div class="res-icon">
+                      <img
+                        src="./assets/building-07.png"
+                        alt="Real Estate Icon"
+                      />
+                    </div>
+                    <div class="res-text">
+                      <h3>Best Practices</h3>
+                      <p>The latest industry news, updates and info..</p>
+                    </div>
+                  </a>
+                  <a href="#" class="res-category">
+                    <div class="res-icon">
+                      <img
+                        src="./assets/shopping-bag-03.png"
+                        alt="E-commerce Icon"
+                      />
+                    </div>
+                    <div class="res-text">
+                      <h3>Help and support</h3>
+                      <p>Get up and running on new features on...</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div id="customer-stories" class="restabcontent">
+                <h3>Help centre</h3>
+                <div class="res-container-tab">
+                  <a href="#" class="res-category">
+                    <div class="res-icon">
+                      <img
+                        src="./assets/building-07.png"
+                        alt="Real Estate Icon"
+                      />
+                    </div>
+                    <div class="res-text">
+                      <h3>Customer stories</h3>
+                      <p>The latest industry news, updates and info.</p>
+                    </div>
+                  </a>
+                  <a href="#" class="res-category">
+                    <div class="res-icon">
+                      <img
+                        src="./assets/shopping-bag-03.png"
+                        alt="E-commerce Icon"
+                      />
+                    </div>
+                    <div class="res-text">
+                      <h3>E-commerce & Retail</h3>
+                      <p>
+                        All the boring stuff that you (hopefully won’t) need.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div id="brand-comparisons" class="restabcontent">
+                <h3>Help centre</h3>
+                <div class="res-container-tab">
+                  <a href="#" class="res-category">
+                    <div class="res-icon">
+                      <img
+                        src="./assets/building-07.png"
+                        alt="Real Estate Icon"
+                      />
+                    </div>
+                    <div class="res-text">
+                      <h3>Brand Comparisons</h3>
+                      <p>The latest industry news, updates and info.</p>
+                    </div>
+                  </a>
+                  <a href="#" class="res-category">
+                    <div class="res-icon">
+                      <img
+                        src="./assets/shopping-bag-03.png"
+                        alt="E-commerce Icon"
+                      />
+                    </div>
+                    <div class="res-text">
+                      <h3>E-commerce & Retail</h3>
+                      <p>
+                        All the boring stuff that you (hopefully won’t) need.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div id="chat-to-support" class="restabcontent">
+                <h3>Help centre</h3>
+                <div class="res-container-tab">
+                  <a href="#" class="res-category">
+                    <div class="res-icon">
+                      <img
+                        src="./assets/building-07.png"
+                        alt="Real Estate Icon"
+                      />
+                    </div>
+                    <div class="res-text">
+                      <h3>Chat to Support</h3>
+                      <p>The latest industry news, updates and info.</p>
+                    </div>
+                  </a>
+                  <a href="#" class="res-category">
+                    <div class="res-icon">
+                      <img
+                        src="./assets/shopping-bag-03.png"
+                        alt="E-commerce Icon"
+                      />
+                    </div>
+                    <div class="res-text">
+                      <h3>E-commerce & Retail</h3>
+                      <p>
+                        All the boring stuff that you (hopefully won’t) need.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="has-dropdown"><a href="./price.html">Pricing</a></li>
+        </ul>
+
+        <div class="btn-container">
+          <button class="btn-1">Free trial</button>
+          <button class="btn-2">Sign up</button>
+        </div>
+      </div>
+    </nav>
     <!-- Hero -->
     <section class="hero">
       <div class="label">

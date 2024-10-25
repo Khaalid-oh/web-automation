@@ -349,6 +349,7 @@ button {
   justify-content: center;
   gap: 2px;
   cursor: pointer;
+  background-color: red;
 }
 
 .prod-container {
