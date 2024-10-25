@@ -343,13 +343,11 @@ button {
   background-color: #e33c04;
 }
 
-.has-dropdown {
+.top-ul li {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2px;
+  justify-content: space-between;
   cursor: pointer;
-  background-color: red;
 }
 
 .prod-container {
